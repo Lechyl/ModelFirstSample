@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="NovelDatabaseModelStoreContainer" CdmEntityContainer="NovelListDBEntities">
+    <EntitySetMapping Name="NovelLists">
+      <EntityTypeMapping TypeName="NovelDatabaseModel.NovelList">
+        <MappingFragment StoreEntitySet="NovelList">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Chapter" ColumnName="Chapter" />
+          <ScalarProperty Name="Genre" ColumnName="Genre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

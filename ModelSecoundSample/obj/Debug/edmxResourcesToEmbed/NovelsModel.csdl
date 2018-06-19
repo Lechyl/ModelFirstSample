@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="NovelsModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="NovelsModelContainer" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Novels" EntityType="NovelsModel.Novel" />
+  </EntityContainer>
+  <EntityType Name="Novel">
+    <Key>
+      <PropertyRef Name="NovelId" />
+    </Key>
+    <Property Name="NovelId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="true" />
+    <Property Name="Chapter" Type="Int32" Nullable="true" />
+    <Property Name="Genre" Type="String" Nullable="true" />
+  </EntityType>
+</Schema>

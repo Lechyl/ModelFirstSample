@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="NovelsModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="NovelsModelStoreContainer">
+    <EntitySet Name="Novels" EntityType="NovelsModel.Store.Novels" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="Novels">
+    <Key>
+      <PropertyRef Name="NovelId" />
+    </Key>
+    <Property Name="NovelId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Chapter" Type="int" Nullable="true" />
+    <Property Name="Genre" Type="nvarchar(max)" Nullable="true" />
+  </EntityType>
+</Schema>
